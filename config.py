@@ -68,6 +68,45 @@ SAC_CONFIG = {
     }
 }
 
+PPO_CONFIG = {
+    "CartPole-v1": {
+        "Gamma": 0.99,
+        "Actor LR": 0.0003,
+        "Critic LR": 0.001,
+        "Entropy Coef": 0.01,
+        "Hidden Dim": 64,
+        "Training Episodes": 500,
+        "Rollout Length": 2048
+    },
+    "Acrobot-v1": {
+        "Gamma": 0.99,
+        "Actor LR": 0.0003,
+        "Critic LR": 0.001,
+        "Entropy Coef": 0.01,
+        "Hidden Dim": 64,
+        "Training Episodes": 500,
+        "Rollout Length": 2048
+    },
+    "MountainCar-v0": {
+        "Gamma": 0.99,
+        "Actor LR": 0.0005,
+        "Critic LR": 0.001,
+        "Entropy Coef": 0.1,
+        "Hidden Dim": 128,
+        "Training Episodes": 2000,
+        "Rollout Length": 4096
+    },
+    "Pendulum-v1": {
+        "Gamma": 0.99,
+        "Actor LR": 0.0003,
+        "Critic LR": 0.001,
+        "Entropy Coef": 0.01,
+        "Hidden Dim": 128,
+        "Training Episodes": 1000,
+        "Rollout Length": 4096
+    }
+}
+
 ENVIRONMENTS = {
     "CartPole-v1": {
         "target_reward": 475
